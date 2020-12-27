@@ -22,6 +22,10 @@ const MediasList = ({ medias: { mediasInfo }, filter, setMedia }) => {
   const [filteredMedias, setFilteredMedias] = useState([])
 
   useEffect(() => {
+    return () => window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
     setFilteredMedias(filterMedias(mediasInfo, filter))
   }, [mediasInfo, filter])
 
