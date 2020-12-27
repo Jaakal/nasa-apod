@@ -1,0 +1,49 @@
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+}
+
+.nasa-logo {
+  font-family: 'Nasa';
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #c1011c;
+}
+
+.apod-logo {
+  font-family: 'Amatic SC';
+  font-size: 75px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dash {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nasa-logo {
+    font-size: 70px;
+  }
+  .apod-logo {
+    font-size: 55px;
+  }
+}
+/*# sourceMappingURL=Logo.css.map */

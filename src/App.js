@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 
-function App() {
+import './css/reset.css'
+import './css/App.css'
+
+import MediasForm from './components/MediasForm'
+import MediasList from './components/MediasList'
+import MediaInfo from './components/MediaInfo'
+import Logo from './components/Logo'
+import Loader from './components/Loader'
+
+import { addMediasInfo } from './actions/medias'
+import fetchMediasInfo from './utility/fetchMedias'
+
+const App = ({ medias: { loading }, addMediasInfo }) => {
+  const [media, setMedia] = useState(null)
+
+  useEffect(() => {
+    if (loading)
+      fetchMediasInfo(addMediasInfo)
+  }, [loading, addMediasInfo])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {loading ? <Loader/> :
+        <div className="app">
+          {media ? <MediaInfo media={media} setMedia={setMedia}/> :
+            <>          
+              <Logo headline={'A Picture of the Day'}/>
+              <MediasForm/>
+              <MediasList setMedia={setMedia}/>
+            </>
+          }
+        </div>
+      }
+    </>
+  )
 }
 
-export default App;
+App.propTypes = {
+  medias: PropTypes.object.isRequired,
+  addMediasInfo: PropTypes.func.isRequired,
+}
+
+const mapStateToProps = state => ({
+  medias: state.medias
+})
+
+const mapDispatchToProps = dispatch => ({
+  addMediasInfo: state => {
+    dispatch(
+      addMediasInfo(state)
+    )
+  }
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)

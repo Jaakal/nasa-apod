@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.nasa-logo {
+  font-family: 'Nasa';
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #c1011c;
+}
+
+.apod-logo {
+  font-family: 'Amatic SC';
+  font-size: 75px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    flex-direction: column;
+  }
+
+  .dash {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nasa-logo {
+    font-size: 70px;
+  }
+
+  .apod-logo {
+    font-size: 55px;
+  }
+}

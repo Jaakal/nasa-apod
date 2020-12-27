@@ -1,0 +1,50 @@
+.image-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-family: 'Amatic SC';
+  font-weight: bold;
+
+  .input-wrapper {
+    display: flex;
+  }
+
+  label[for='start-date'],
+  label[for='end-date'] {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    // padding: 20px 5px 20px;
+  }
+
+  label[for='start-date'] {
+    padding-left: 0;
+  }
+
+  input[name='start-date'],
+  input[name='end-date'] {
+    height: 30px;
+    margin: 20px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+  }
+
+  .select-wrapper {
+    border-bottom: 1px solid black;
+  }
+}
+
+#category {
+  height: 29px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  outline: none;
+}

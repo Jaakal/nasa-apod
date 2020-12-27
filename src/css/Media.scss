@@ -1,0 +1,35 @@
+.media-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 230px;
+  padding: 15px 10px;
+
+  .media {
+    height: 200px;
+    opacity: 0;
+    transition: transform 0.2s ease;
+    will-change: transform;
+  }
+
+  &:hover {
+    .media {
+      transform: scale(1.05, 1.05);
+      box-shadow: 0 0 5px red;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .media-wrapper {
+    height: auto;
+
+    .media {
+      width: 80%;
+      height: auto;
+    }
+  }
+}

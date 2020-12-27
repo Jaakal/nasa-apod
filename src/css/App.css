@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Nasa';
+  src: url("../fonts/Nasa.eot");
+  src: url("../fonts/Nasa.eot?#iefix") format("embedded-opentype"), url("../fonts/Nasa.woff2") format("woff2"), url("../fonts/Nasa.woff") format("woff"), url("../fonts/Nasa.ttf") format("truetype"), url("../fonts/Nasa.svg#Nasa") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  src: url("../fonts/AmaticSC-Regular.eot");
+  src: url("../fonts/AmaticSC-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AmaticSC-Regular.woff2") format("woff2"), url("../fonts/AmaticSC-Regular.woff") format("woff"), url("../fonts/AmaticSC-Regular.ttf") format("truetype"), url("../fonts/AmaticSC-Regular.svg#AmaticSC-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  src: url("../fonts/AmaticSC-Bold.eot");
+  src: url("../fonts/AmaticSC-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AmaticSC-Bold.woff2") format("woff2"), url("../fonts/AmaticSC-Bold.woff") format("woff"), url("../fonts/AmaticSC-Bold.ttf") format("truetype"), url("../fonts/AmaticSC-Bold.svg#AmaticSC-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url("../fonts/Jost-Regular.eot");
+  src: url("../fonts/Jost-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost-Regular.woff2") format("woff2"), url("../fonts/Jost-Regular.woff") format("woff"), url("../fonts/Jost-Regular.ttf") format("truetype"), url("../fonts/Jost-Regular.svg#Jost-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=App.css.map */

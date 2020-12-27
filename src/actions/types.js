@@ -1,0 +1,2 @@
+export const ADD_MEDIAS_INFO = 'ADD_MEDIAS_INFO'
+export const MODIFY_FILTER = 'MODIFY_FILTER'
