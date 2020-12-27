@@ -1,0 +1,8 @@
+{
+  "short_name": "NASA - APOD",
+  "name": "NASA - A Picture of the Day",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
