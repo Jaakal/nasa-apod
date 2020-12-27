@@ -18,7 +18,7 @@ const MediaInfo = ({
   setMedia
 }) => {
   useEffect(() => {
-    setTimeout(() => window.scrollTo(0, 0), 100)
+    Event.observe(window, 'load', () => window.scrollTo(0, 0))
   }, [])
 
   const titleContainer = (
