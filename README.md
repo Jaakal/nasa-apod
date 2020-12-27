@@ -25,7 +25,7 @@ The application has filters on the main page to separate pictures by API and dat
 
 ## Screenshot
 
-![Screenshot of the webpage](src/images/screenshot.png)
+![Screenshot of the webpage](/screenshot.png)
 
 ## Getting Started
 
@@ -81,7 +81,7 @@ The page will reload if you make edits.
 
 <a href="https://github.com/Jaakal" target="_blank">
 
-  ![Screenshot Image](src/images/jaak-profile.png) 
+  ![Screenshot Image](/jaak-profile.png) 
 
 </a>
 
