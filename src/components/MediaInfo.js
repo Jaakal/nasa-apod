@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import '../css/MediaInfo.css';
@@ -17,6 +17,10 @@ const MediaInfo = ({
   },
   setMedia
 }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const titleContainer = (
     <div className="media-info-title-wrapper">
       <span>Earth Polychromatic</span>
